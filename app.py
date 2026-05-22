@@ -70,8 +70,8 @@ def generate():
         
         return jsonify({
             "status": "success",
-            "ingredientes_enviados": situacao,
-            "dados_receita": conselho_estruturado
+            "nome_do_conselho": situacao,
+            "conselho_informado": conselho_estruturado
         }), 200
         
     except Exception as e:
