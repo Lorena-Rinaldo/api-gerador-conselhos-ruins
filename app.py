@@ -24,7 +24,7 @@ def generate_bad_advice(situacao):
     conteudo_prompt = f"Me dê um conselho terrível para a seguinte situação: {situacao}"
     
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3-flash-preview",
         contents=conteudo_prompt,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
